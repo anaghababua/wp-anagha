@@ -1,0 +1,59 @@
+<html>
+<head><title>form</title>
+<style>
+form{
+border:1px solid#000;
+background-color:#cof4ff;
+text-align:center;
+padding:30px;
+width:400px;
+border-radius:10px;
+height:300px;}
+</style>
+</head>
+<body align="center">
+<center>
+<form name="form1"onsubmit="validationform()">
+<h1>validation form</h1>
+<table>
+<tr>
+<td><label>Name</label></td>
+<td><input type="text" name="name"></td>
+</tr>
+<tr>
+<td><label>E-mail</label></td>
+<td><input type="email" name="email"></td>
+</tr>
+<td><label>password</label></td>
+<td><input type="password"name="password"></td>
+</tr>
+<td><label>mobile no</label></td>
+<td><input type="number"></td>
+</tr>
+<tr>
+<td><input type="submit">
+</tr>
+</table>
+</form>
+</center>
+<script type="text/javascript">
+
+
+function validationform()
+{
+var name:document.form1.name.value;
+var password:document.form1.password.value;
+if(name==null||name=="")
+{
+alert("enter a valid name");
+}
+if(password.length<=8)
+{
+alert("enter a strong password");
+}
+}
+</script>
+</body>
+</html>
+
+

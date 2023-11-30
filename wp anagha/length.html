@@ -1,0 +1,19 @@
+<html>
+<body>
+   <button onclick="changecolor()">click me</button>   
+   <script>
+       var place=0;
+	   function changecolor(){
+	   // your color list
+	   var colorlist = ["red","green","blue"];
+	   // set the color
+	   document.body.style.background=colorlist[place];
+	   place++;
+	   // if place is greaber than the list size,reset
+	   if(place===colorlist.length)place=0;
+	   }
+	   </script>
+	   </body>
+	   </html>
+    
+   
